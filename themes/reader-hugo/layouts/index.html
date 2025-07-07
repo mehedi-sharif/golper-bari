@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-lg-9 mx-auto">
           <h1 class="mb-5">{{site.Params.banner.heading | markdownify}}</h1>
-          <ul class="list-inline widget-list-inline hidden">
+          {{/*  <ul class="list-inline widget-list-inline">
             {{ $filter:= site.Params.main_taxonomy }}
             {{ if eq $filter "tag" }}
             {{ range $name, $items := site.Taxonomies.tags }}
@@ -26,7 +26,7 @@
                 $name | humanize }}</a></li>
             {{ end }}
             {{ end }}
-          </ul>
+          </ul>  */}}
         </div>
       </div>
     </div>
