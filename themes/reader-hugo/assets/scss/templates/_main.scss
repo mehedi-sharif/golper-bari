@@ -113,7 +113,7 @@
   position: relative;
   padding: 7.5rem 0 9.375rem;
 
-  &>.container {
+  & > .container {
     position: relative;
     z-index: 1;
   }
@@ -154,7 +154,7 @@
 
   &-border {
     position: absolute;
-    bottom: -.9rem;
+    bottom: -0.9rem;
     left: 0;
     width: 100%;
     stroke: $color-primary;
@@ -279,7 +279,7 @@
   @extend .shadow;
   border: 0;
   background-color: $white;
-  transition: .2s ease;
+  transition: 0.2s ease;
 
   &-body {
     padding: 1.5rem;
@@ -288,7 +288,7 @@
   &-img-sm {
     height: 5.3rem;
     width: 5.3rem;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     object-fit: cover;
   }
 
@@ -390,11 +390,11 @@
   overflow: hidden;
 
   &:hover {
-    .swiper-navigation>button.swiper-button-prev {
+    .swiper-navigation > button.swiper-button-prev {
       left: 0.625rem;
     }
 
-    .swiper-navigation>button.swiper-button-next {
+    .swiper-navigation > button.swiper-button-next {
       right: 0.625rem;
     }
   }
@@ -409,19 +409,19 @@
     object-fit: cover;
   }
 
-  .swiper-navigation>button {
+  .swiper-navigation > button {
     height: 2.18rem;
     width: 2.18rem;
     line-height: 2.18rem;
   }
 }
 
-.swiper-navigation>button {
+.swiper-navigation > button {
   height: 3.125rem;
   width: 3.125rem;
   line-height: 3.125rem;
   border-radius: 50%;
-  background: rgba($color: $color-primary, $alpha: .5);
+  background: rgba($color: $color-primary, $alpha: 0.5);
   color: $white;
   border: 0;
 
@@ -438,11 +438,11 @@
   }
 }
 
-.swiper-navigation>button.swiper-button-prev {
+.swiper-navigation > button.swiper-button-prev {
   left: -3.75rem;
 }
 
-.swiper-navigation>button.swiper-button-next {
+.swiper-navigation > button.swiper-button-next {
   right: -3.75rem;
 }
 
@@ -514,7 +514,7 @@
     }
   }
 
-  &:nth-child(3n+3) {
+  &:nth-child(3n + 3) {
     .author-card {
       border-right-color: transparent;
 
@@ -524,7 +524,7 @@
     }
   }
 
-  &:nth-child(2n+2) {
+  &:nth-child(2n + 2) {
     @include desktop {
       .author-card {
         border-right-color: transparent;
@@ -535,7 +535,6 @@
 
 // content style
 .content {
-
   * {
     word-break: break-word;
     overflow-wrap: break-word;
@@ -583,7 +582,7 @@
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         height: 8px;
         width: 8px;
         border-radius: 50%;
@@ -603,7 +602,7 @@
 
   table td,
   table th {
-    padding: .75rem;
+    padding: 0.75rem;
     vertical-align: top;
     margin-bottom: 0;
   }
@@ -658,21 +657,20 @@
   }
 
   .notices.note p::after {
-    content: 'Note';
+    content: "Note";
     position: absolute;
     top: 2px;
     color: $white;
     left: 2rem;
   }
 
-
   .notices.tip p {
-    border-top: 1.875rem solid #78C578;
+    border-top: 1.875rem solid #78c578;
     background: #e2ffe2;
   }
 
   .notices.tip p::after {
-    content: 'Tip';
+    content: "Tip";
     position: absolute;
     top: 2px;
     color: $white;
@@ -680,26 +678,25 @@
   }
 
   .notices.info p {
-    border-top: 1.875rem solid #F0B37E;
+    border-top: 1.875rem solid #f0b37e;
     background: #ffedde;
   }
 
   .notices.info p::after {
-    content: 'Info';
+    content: "Info";
     position: absolute;
     top: 2px;
     color: $white;
     left: 2rem;
   }
 
-
   .notices.warning p {
-    border-top: 1.875rem solid #E06F6C;
+    border-top: 1.875rem solid #e06f6c;
     background: #ffdad8;
   }
 
   .notices.warning p::after {
-    content: 'Warning';
+    content: "Warning";
     position: absolute;
     top: 2px;
     color: #fff;
@@ -747,9 +744,8 @@
     }
   }
 
-
   .accordion-body {
-    padding: .8rem 1rem 0;
+    padding: 0.8rem 1rem 0;
 
     ul {
       margin-bottom: 0;
@@ -757,7 +753,7 @@
   }
 
   .accordion-item {
-    padding: 0 0 .5rem;
+    padding: 0 0 0.5rem;
     margin-bottom: 0;
     background-color: transparent;
   }
@@ -773,7 +769,7 @@
     position: relative;
 
     &::after {
-      background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22 fill=%22%23000%22%3E%3Cpath fill-rule=%22evenodd%22 d=%22M1.646 4.646a.5.5.0 01.708.0L8 10.293l5.646-5.647a.5.5.0 01.708.708l-6 6a.5.5.0 01-.708.0l-6-6a.5.5.0 010-.708z%22/%3E%3C/svg%3E');
+      background-image: url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22 fill=%22%23000%22%3E%3Cpath fill-rule=%22evenodd%22 d=%22M1.646 4.646a.5.5.0 01.708.0L8 10.293l5.646-5.647a.5.5.0 01.708.708l-6 6a.5.5.0 01-.708.0l-6-6a.5.5.0 010-.708z%22/%3E%3C/svg%3E");
       position: absolute;
       content: "";
       left: 0;
@@ -782,7 +778,7 @@
       width: 1.25rem;
       height: 1.25rem;
       background-repeat: no-repeat;
-      transition: transform .2s ease-in-out;
+      transition: transform 0.2s ease-in-out;
     }
 
     &.collapsed::after {
@@ -799,7 +795,6 @@
       color: lighten($black, 4.509);
     }
   }
-
 }
 
 .form-group {
@@ -832,7 +827,7 @@
 // sidebar
 .widget {
   margin-bottom: 1.875rem;
-  padding: .9rem;
+  padding: 0.9rem;
   border-radius: 5px;
   border-top: 6px solid $color-primary;
   background-color: $white;
@@ -840,7 +835,7 @@
 
   &-title {
     text-transform: uppercase;
-    margin-bottom: .9rem;
+    margin-bottom: 0.9rem;
     color: $text-dark;
     text-align: center;
     letter-spacing: 0.06em;
@@ -858,7 +853,7 @@
       background-color: $light;
       padding-left: 1.25rem;
       padding-right: 1.25rem;
-      transition: .2s ease;
+      transition: 0.2s ease;
 
       &:focus {
         border-color: $color-primary;
@@ -873,8 +868,8 @@
     i {
       color: $text-dark;
       position: absolute;
-      right: .9rem;
-      top: .9rem;
+      right: 0.9rem;
+      top: 0.9rem;
       font-size: 0.75rem;
     }
   }
@@ -920,7 +915,7 @@
   &-categories {
     a {
       position: relative;
-      padding-left: .9rem;
+      padding-left: 0.9rem;
 
       &::before {
         position: absolute;
@@ -955,7 +950,7 @@
       margin-bottom: 0.625rem;
 
       a {
-        padding: 2px .9rem;
+        padding: 2px 0.9rem;
         border: 1px solid $color-primary;
         border-radius: 1.875rem;
         display: block;
@@ -1083,8 +1078,8 @@
     height: 100%;
     width: 100%;
     background-color: $light;
-    left: -.9rem;
-    top: -.9rem;
+    left: -0.9rem;
+    top: -0.9rem;
     z-index: -1;
     border-radius: 5px;
   }
@@ -1095,8 +1090,8 @@
     height: 100%;
     width: 100%;
     border: 1px solid $color-primary;
-    left: .9rem;
-    top: .9rem;
+    left: 0.9rem;
+    top: 0.9rem;
     border-radius: inherit;
   }
 }
@@ -1136,12 +1131,12 @@
   color: $white;
   background-color: $color-primary;
   text-align: center;
-  box-shadow: 0 0 0 5px rgba($color: $color-primary, $alpha: .7);
-  transition: .2s ease-out;
+  box-shadow: 0 0 0 5px rgba($color: $color-primary, $alpha: 0.7);
+  transition: 0.2s ease-out;
 
   &:hover {
     color: $white;
-    box-shadow: 0 0 0 0.625rem rgba($color: $color-primary, $alpha: .7);
+    box-shadow: 0 0 0 0.625rem rgba($color: $color-primary, $alpha: 0.7);
   }
 }
 
@@ -1185,4 +1180,11 @@
 
 .card-body {
   padding: 23px 1.5rem;
+}
+
+.card-img-resize {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
 }

@@ -179,7 +179,7 @@
                       </div>
                     </div>
                   {{ else }}
-                    <div class="post-slider slider-sm">
+                    <div class="post-slider slider-sm hidden">
                       {{ range .Params.images }}
                         <a href="{{ $Permalink }}">
                           {{ partial "image.html" (dict "Src" . "Alt" "post-thumb" "Class" `card-img-top`) }}
@@ -290,8 +290,8 @@
               {{ else }}
                 <div class="post-slider slider-sm">
                   {{ range .Params.images }}
-                    <a href="{{ $Permalink }}">
-                      {{ partial "image.html" (dict "Src" . "Alt" "post-thumb" "Class" `card-img-top`) }}
+                    <a href="{{ $Permalink }}" class="d-block">
+                      {{ partial "image.html" (dict "Src" . "Alt" "post-thumb" "Class" `card-img-resize`) }}
                     </a>
                   {{ end }}
                 </div>
