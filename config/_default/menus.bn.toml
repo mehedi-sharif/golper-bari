@@ -1,4 +1,4 @@
-############# english navigation ##############
+############# french navigation ##############
 
 # Dropdown menu
 [[main]]
@@ -6,12 +6,15 @@ weight = 1
 name = "homepage"
 url = "/"
 
-
 [[main]]
 name = "About"
 URL = "about-me/"
 weight = 2
 
+[[main]]
+name = "Contact"
+URL = "contact/"
+weight = 3
 
 # footer menu
 [[footer]]

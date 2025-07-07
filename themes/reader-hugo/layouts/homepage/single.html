@@ -129,7 +129,7 @@
             <h3 class="h4 mb-3"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <ul class="card-meta list-inline">
               <li class="list-inline-item">
-                <a href="{{ `author/` | relLangURL }}{{ .Params.author | urlize }}/" class="card-meta-author">
+                <a href="about-me/" class="card-meta-author">
                   {{ $author:= .Params.author | urlize}}
                   {{ with site.GetPage $author }}
                   {{ if .Params.image }}
@@ -248,7 +248,7 @@
             <h3 class="h4 mb-3"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <ul class="card-meta list-inline">
               <li class="list-inline-item">
-                <a href="{{ `author/` | relLangURL }}{{ .Params.author | urlize }}/" class="card-meta-author">
+                <a href="about-me/" class="card-meta-author">
                   {{ $author:= .Params.author | urlize}}
                   {{ with site.GetPage $author }}
                   {{ if .Params.image }}
@@ -371,7 +371,7 @@
               <h3 class="h4 mb-3"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
               <ul class="card-meta list-inline">
                 <li class="list-inline-item">
-                  <a href="{{ `author/` | relLangURL }}{{ .Params.author | urlize }}/" class="card-meta-author">
+                  <a href="about-me/" class="card-meta-author">
                     {{ $author:= .Params.author | urlize}}
                     {{ with site.GetPage $author }}
                     {{ if .Params.image }}
@@ -456,7 +456,7 @@
                 <h3 class="h4 mb-3"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
                 <ul class="card-meta list-inline">
                   <li class="list-inline-item">
-                    <a href="{{ `author/` | relLangURL }}{{ .Params.author | urlize }}/" class="card-meta-author">
+                    <a href="about-me/" class="card-meta-author">
                       {{ $author:= .Params.author | urlize}}
                       {{ with site.GetPage $author }}
                       {{ if .Params.image }}
@@ -532,7 +532,7 @@
             <h3 class="mb-3"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
             <ul class="card-meta list-inline">
               <li class="list-inline-item">
-                <a href="{{ `author/` | relLangURL }}{{ .Params.author | urlize }}/" class="card-meta-author">
+                <a href="about-me/" class="card-meta-author">
                   {{ $author:= .Params.author | urlize}}
                   {{ with site.GetPage $author }}
                   {{ if .Params.image }}

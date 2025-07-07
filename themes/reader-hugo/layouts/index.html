@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-lg-9 mx-auto">
           <h1 class="mb-5">{{site.Params.banner.heading | markdownify}}</h1>
-          <ul class="list-inline widget-list-inline">
+          <ul class="list-inline widget-list-inline hidden">
             {{ $filter:= site.Params.main_taxonomy }}
             {{ if eq $filter "tag" }}
             {{ range $name, $items := site.Taxonomies.tags }}
@@ -133,7 +133,7 @@
               <h3 class="h4 mb-3"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
               <ul class="card-meta list-inline">
                 <li class="list-inline-item">
-                  <a href="{{ `author/` | relLangURL }}{{ .Params.author | urlize }}/" class="card-meta-author">
+                  <a href="about-me/" class="card-meta-author">
 
                     {{ $author:= .Params.author | urlize}}
                     {{ with site.GetPage $author }}
@@ -253,7 +253,7 @@
               <h3 class="h4 mb-3"><a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
               <ul class="card-meta list-inline">
                 <li class="list-inline-item">
-                  <a href="{{ `author/` | relLangURL }}{{ .Params.author | urlize }}/" class="card-meta-author">
+                  <a href="about-me/" class="card-meta-author">
                     {{ $author:= .Params.author | urlize}}
                     {{ with site.GetPage $author }}
                     {{ if .Params.image }}

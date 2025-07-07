@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-image : "images/about-me.jpg"
+image : "images/about-me.png"
 # description
 description: "This is meta description"
 layout: "about-me"
@@ -8,7 +8,7 @@ draft: false
 
 # education
 education:
-  enable : true
+  enable : false
   title : "Educational Qualification <br> That I Have Gathered"
   degree:
   - name : "BEng Electronic Engineering"
@@ -29,14 +29,14 @@ education:
 
 # mission
 mission:
-  enable : true
+  enable : false
   title : "What is the main mission of mine and what i wanna do?"
   image : "images/mission.png"
   content : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
 
 # Youtube
 youtube:
-  enable : true
+  enable : false
   title : "Don’t forget to subscribe my Youtube channel “Richi Andorn”"
   image : "images/youtube.png"
   video_id: "dyZcRRWiuuw"
@@ -44,7 +44,7 @@ youtube:
 
 # partners
 partners:
-  enable : true
+  enable : false
   title : "My Contents also published <br> on these websites"
   logos:
     - "images/logos/logo-1.png"
@@ -58,6 +58,6 @@ partners:
     - "images/logos/logo-9.png"
 ---
 
-## Helllo I’m Richi Andorn I’m a Biography Based researcher And Author 
+## Hello I’m Barry
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit massa vitae felis augue. In venenatis scelerisque accumsan egestas mattis. Massa feugiat in sem pellentesque.
+Barry is a dreamer who believes every Bangla story deserves a home. Living in Texas but rooted in Bangla culture, he built Golper Bari to bring together storytellers, readers, and anyone who loves a good golpo over a cup of tea. Welcome to Barry’s little house of stories — come in, read, and share yours too.
